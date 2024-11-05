@@ -1,0 +1,147 @@
+[gd_scene load_steps=21 format=3 uid="uid://dwxoey0u4atwc"]
+
+[ext_resource type="Texture2D" uid="uid://xccyswh1plv8" path="res://Pixel Adventure 1/Free/Items/Fruits/Apple.png" id="1_5iaty"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oaxua"]
+radius = 15.0333
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co0vc"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6v8k"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0umwb"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xjc6"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0ny8"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t146k"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1vp4"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqqvg"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qrdq"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkfow"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2840"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0afi"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_21oxm"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tccr"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25shg"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_baas2"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_he38m"]
+atlas = ExtResource("1_5iaty")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iq0nd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_co0vc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6v8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0umwb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xjc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0ny8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t146k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1vp4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqqvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qrdq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkfow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2840")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0afi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_21oxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tccr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25shg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_baas2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_he38m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Effect" type="Area2D"]
+position = Vector2(97, 49)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_oaxua")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(1.78125, 1.76562)
+sprite_frames = SubResource("SpriteFrames_iq0nd")
+autoplay = "default"
+frame_progress = 0.988375
